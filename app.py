@@ -8,7 +8,7 @@ from sold_generator_pixel_perfect import measure_reference, generate_sold_image,
 
 
 
-st.set_page_config(page_title="Fake Vinted Sold Listing Generator", layout="centered")
+st.set_page_config(page_title="V-COM Vinted Fake Listing Generator", layout="centered")
 
 # --- DB helper function ---
 def check_license(license_key):
@@ -93,4 +93,5 @@ if st.session_state.logged_in:
                     )
 else:
     st.info("Please enter your license key to login.")
+
 
