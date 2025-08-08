@@ -25,7 +25,7 @@ if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
     st.session_state.username = None
 
-st.title("🔐 Login with License Key")
+st.title("V-Com Vinted Generator")
 
 with st.form("login_form"):
     license_key_input = st.text_input("License Key", type="password")
@@ -93,5 +93,6 @@ if st.session_state.logged_in:
                     )
 else:
     st.info("Please enter your license key to login.")
+
 
 
