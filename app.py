@@ -43,7 +43,7 @@ if submitted:
         st.session_state.username = None
 
 if st.session_state.logged_in:
-    st.title("📦 Fake Vinted Sold Listing Generator")
+    st.title("Fake Vinted Sold Listing Generator")
     st.write(f"Logged in as: **{st.session_state.username}**")
     st.write("Generate pixel-perfect fake Vinted 'Sold' listings. Measurements and layout are exactly preserved.")
 
@@ -93,3 +93,4 @@ if st.session_state.logged_in:
                     )
 else:
     st.info("Please enter your license key to login.")
+
