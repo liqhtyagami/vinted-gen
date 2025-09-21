@@ -1,10 +1,10 @@
- - @light, @zkjaimport streamlit as st
+import streamlit as st
 import sqlite3
 import os
 import tempfile
 from sold_generator_pixel_perfect import measure_reference, generate_sold_image, TEMPLATE_PATH, REFERENCE_PATH, OUT_PATH
 
-st.set_page_config(page_title="Fake Vinted Sold Listing Generator - @light @zkja", layout="centered")
+st.set_page_config(page_title="Fake Vinted Sold Listing Generator - @light, @zkja", layout="centered")
 
 def check_license(license_key):
     conn = sqlite3.connect("licenses.db")
@@ -22,7 +22,7 @@ if "logged_in" not in st.session_state:
 if "last_image_path" not in st.session_state:
     st.session_state.last_image_path = None
 
-st.title("V-Com Vinted Generator - @light @zkja")
+st.title("V-Com Vinted Generator - @light, @zkja")
 
 with st.form("login_form"):
     license_key_input = st.text_input("License Key", type="password")
@@ -125,6 +125,7 @@ if st.session_state.logged_in:
 
 else:
     st.info("Please enter your license key to login.")
+
 
 
 
