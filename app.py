@@ -4,7 +4,7 @@ import os
 import tempfile
 from sold_generator_pixel_perfect import measure_reference, generate_sold_image, TEMPLATE_PATH, REFERENCE_PATH, OUT_PATH
 
-st.set_page_config(page_title="Fake Vinted Sold Listing Generator", layout="centered")
+st.set_page_config(page_title="Fake Vinted Sold Listing Generator - @light, @zkja", layout="centered")
 
 def check_license(license_key):
     conn = sqlite3.connect("licenses.db")
@@ -125,3 +125,4 @@ if st.session_state.logged_in:
 
 else:
     st.info("Please enter your license key to login.")
+
