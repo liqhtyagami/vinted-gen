@@ -1,4 +1,4 @@
-import streamlit as st
+ - @light, @zkjaimport streamlit as st
 import sqlite3
 import os
 import tempfile
@@ -22,7 +22,7 @@ if "logged_in" not in st.session_state:
 if "last_image_path" not in st.session_state:
     st.session_state.last_image_path = None
 
-st.title("V-Com Vinted Generator")
+st.title("V-Com Vinted Generator - @light, @zkja")
 
 with st.form("login_form"):
     license_key_input = st.text_input("License Key", type="password")
@@ -125,4 +125,5 @@ if st.session_state.logged_in:
 
 else:
     st.info("Please enter your license key to login.")
+
 
